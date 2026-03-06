@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="550.0" style="-fx-background-color: #F8E7FE;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dulceria.Controlador.VentanaActualizarController">
+    
+    <!-- Panel Superior - Título -->
+    <top>
+        <VBox alignment="CENTER" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="15" top="20" />
+            </padding>
+            <Label text="ACTUALIZAR" textFill="#ffa800">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="18" />
+                </font>
+            </Label>
+        </VBox>
+    </top>
+    
+    <!-- Panel Central -->
+    <center>
+        <VBox spacing="20" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="10" left="40" right="40" top="10" />
+            </padding>
+            
+            <!-- Buscar Producto -->
+            <VBox spacing="10">
+                <Label text="Buscar producto:" textFill="#000000">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Label>
+                
+                <HBox alignment="CENTER_LEFT" spacing="15">
+                    <Label text="ID del producto:" textFill="#000000">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtIdBuscar" prefWidth="200">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    <Button fx:id="btnBuscar" onAction="#buscarProducto" prefWidth="100" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Buscar">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="14" />
+                        </font>
+                    </Button>
+                </HBox>
+            </VBox>
+            
+            <!-- Datos del Producto -->
+            <VBox spacing="10" style="-fx-background-color: #EFFFFF; -fx-padding: 15; -fx-background-radius: 5;">
+                <Label text="Datos del producto:" textFill="#000000">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Label>
+                
+                <GridPane hgap="15" vgap="10">
+                    <!-- Nombre -->
+                    <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtNombre" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    
+                    <!-- Precio de compra -->
+                    <Label text="Precio de compra:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtPrecioCompra" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    
+                    <!-- Precio de venta -->
+                    <Label text="Precio de venta:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtPrecioVenta" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    
+                    <!-- Marca -->
+                    <Label text="Marca:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtMarca" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    
+                    <!-- Fecha de caducidad -->
+                    <Label text="Fecha de caducidad:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtFechaCaducidad" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                    
+                    <!-- Cantidad -->
+                    <Label text="Cantidad:" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtCantidad" editable="false" prefWidth="250" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+            </VBox>
+            
+            <!-- Actualizar Campo -->
+            <VBox spacing="15">
+                <Label text="Actualizar campo:" textFill="#000000">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Label>
+                
+                <HBox alignment="CENTER_LEFT" spacing="15">
+                    <Label text="Campo que desea actualizar:" textFill="#000000">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <ComboBox fx:id="cmbCampo" onAction="#cambiarCampo" prefWidth="200">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Precio de compra" />
+                                <String fx:value="Precio de venta" />
+                                <String fx:value="Cantidad" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </HBox>
+                
+                <HBox alignment="CENTER_LEFT" spacing="15">
+                    <Label fx:id="lblNuevoValor" text="Nuevo valor:" textFill="#000000">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="txtNuevoValor" prefWidth="200">
+                        <font>
+                            <Font name="Segoe UI Emoji" size="14" />
+                        </font>
+                    </TextField>
+                </HBox>
+            </VBox>
+        </VBox>
+    </center>
+    
+    <!-- Panel Inferior - Botones -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="15" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="25" top="15" />
+            </padding>
+            
+            <Button fx:id="btnRegresar" onAction="#regresar" prefWidth="120" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Regresar">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="14" />
+                </font>
+            </Button>
+            
+            <Button fx:id="btnActualizar" onAction="#actualizarProducto" prefWidth="120" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Actualizar">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="14" />
+                </font>
+            </Button>
+        </HBox>
+    </bottom>
+    
+</BorderPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="508.0" style="-fx-background-color: #F8E7FE;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dulceria.Controlador.MostrarActualizarController">
+    
+    <!-- Panel Superior - Título -->
+    <top>
+        <VBox alignment="CENTER" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="15" top="15" />
+            </padding>
+            <Label text="INVENTARIO" textFill="#ffa800">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="18" />
+                </font>
+            </Label>
+        </VBox>
+    </top>
+    
+    <!-- Panel Central -->
+    <center>
+        <VBox prefHeight="385.0" prefWidth="627.0" spacing="15" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="10" left="30" right="30" top="10" />
+            </padding>
+            
+            <!-- Etiqueta y Botones de Ordenamiento -->
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="Lista de productos:" textFill="#000000">
+                    <font>
+                        <Font name="Segoe UI Emoji" size="14" />
+                    </font>
+                </Label>
+                
+                <Button fx:id="btnQuick" onAction="#ordenarQuickSort" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Quick Sort">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Button>
+                
+                <Button fx:id="btnHeap" onAction="#ordenarHeapSort" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Heap Sort">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Button>
+                
+                <Button fx:id="btnMerge" onAction="#ordenarMergeSort" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Merge Sort">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14" />
+                    </font>
+                </Button>
+            </HBox>
+            
+            <!-- Área de Texto para mostrar productos -->
+            <TextArea fx:id="textAreaProductos" editable="false" prefHeight="300.0" style="-fx-control-inner-background: white; -fx-border-color: #cccccc; -fx-border-radius: 5;" wrapText="true">
+                <font>
+                    <Font name="Segoe UI Emoji" size="14" />
+                </font>
+            </TextArea>
+        </VBox>
+    </center>
+    
+    <!-- Panel Inferior - Botón Regresar -->
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-background-color: #F8E7FE;">
+            <padding>
+                <Insets bottom="20" top="15" />
+            </padding>
+            <Button fx:id="btnRegresar" onAction="#regresarMenuAdmin" prefWidth="120" style="-fx-background-color: #FFE9A1; -fx-background-radius: 5;" text="Regresar">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="14" />
+                </font>
+            </Button>
+        </HBox>
+    </bottom>
+    
+</BorderPane>
