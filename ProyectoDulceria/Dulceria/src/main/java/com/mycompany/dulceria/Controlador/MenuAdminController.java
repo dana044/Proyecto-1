@@ -44,43 +44,13 @@ public class MenuAdminController implements Initializable {
     }
 
     @FXML
-    private void handleAgregar() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/AgregarVentana.fxml"));
-        Parent root = loader.load();
-        AgregarVentanaController ctrl = loader.getController();
-        ctrl.setDao(dao);
-        Historial.registrar("Entró a 'Agregar producto'");
-        cambiarEscena(root, btnAgregar);
-    }
-
-    @FXML
-    private void handleEliminar() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/EliminarVentana.fxml"));
-        Parent root = loader.load();
-        EliminarVentanaController ctrl = loader.getController();
-        ctrl.setDao(dao);
-        Historial.registrar("Entró a 'Eliminar producto'");
-        cambiarEscena(root, btnEliminar);
-    }
-
-    @FXML
     private void handleMostrar() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/MostrarActualizarVentana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/Producto.fxml"));
         Parent root = loader.load();
-        MostrarActualizarController ctrl = loader.getController();
+        ProductoController ctrl = loader.getController();
         ctrl.setDao(dao);
-        Historial.registrar("Consultó información de inventario");
+        Historial.registrar("Entró a la sección de 'Productos'");
         cambiarEscena(root, btnMostrar);
-    }
-
-    @FXML
-    private void handleActualizar() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/VentanaActualizar.fxml"));
-        Parent root = loader.load();
-        VentanaActualizarController ctrl = loader.getController();
-        ctrl.setDao(dao);
-        Historial.registrar("Entró a 'Actualizar producto'");
-        cambiarEscena(root, btnActualizar);
     }
 
     @FXML
@@ -94,23 +64,13 @@ public class MenuAdminController implements Initializable {
 
     @FXML
     private void handleRegistrarVenta() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/RegistrarVentana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/Venta.fxml"));
         Parent root = loader.load();
-        RegistrarVentanaController ctrl = loader.getController();
+        VentaController ctrl = loader.getController();
         ctrl.setDao(dao);
         ctrl.setVentaDao(ventaDao);
-        Historial.registrar("Entró a 'Registrar venta'");
+        Historial.registrar("Entró a 'Ventas'");
         cambiarEscena(root, btnRegistrarVenta);
-    }
-
-    @FXML
-    private void handleReporte() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/dulceria/fxml/ReporteVentana.fxml"));
-        Parent root = loader.load();
-        ReporteVentanaController ctrl = loader.getController();
-        ctrl.setVentaDao(ventaDao);
-        Historial.registrar("Consultó el reporte de ventas");
-        cambiarEscena(root, btnReporte);
     }
 
     @FXML

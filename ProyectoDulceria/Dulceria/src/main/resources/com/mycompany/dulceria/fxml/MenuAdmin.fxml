@@ -7,82 +7,40 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="507.0" style="-fx-background-color: #F8E7FE;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dulceria.Controlador.MenuAdminController">
+<AnchorPane id="AnchorPane" prefHeight="365.0" prefWidth="424.0" style="-fx-background-color: #F8E7FE;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.dulceria.Controlador.MenuAdminController">
    <children>
-      <Label layoutX="146.0" layoutY="32.0" text="MENÚ ADMINISTRADOR" textFill="#ffa800">
+      <Label layoutX="104.0" layoutY="37.0" text="MENÚ ADMINISTRADOR" textFill="#ffa800">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-
-                        <!-- PRODUCTOS -->
-      <Label layoutX="85.0" layoutY="120.0" text="Productos:">
-         <font>
-            <Font name="Segoe UI Emoji" size="14.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnAgregar" layoutX="172.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleAgregar" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Agregar">
+      <Button fx:id="btnRegistrarVenta" layoutX="130.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleRegistrarVenta" prefHeight="24.0" prefWidth="162.0" style="-fx-background-color: FFE9A1;" text="Ventas">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="btnEliminar" layoutX="309.0" layoutY="98.0" mnemonicParsing="false" onAction="#handleEliminar" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Eliminar">
+      <Button fx:id="btnMostrar" layoutX="130.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleMostrar" prefHeight="24.0" prefWidth="162.0" style="-fx-background-color: FFE9A1;" text="Productos">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Button>
-
-                        <!-- VENTAS -->
-      <Label layoutX="95.0" layoutY="199.0" text="Ventas:">
-         <font>
-            <Font name="Segoe UI Emoji" size="14.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnRegistrarVenta" layoutX="172.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleRegistrarVenta" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Registrar">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnReporte" layoutX="309.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReporte" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Reporte">
+      <Button fx:id="btnCrearUsuario" layoutX="130.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleCrearUsuario" prefHeight="24.0" prefWidth="162.0" style="-fx-background-color: FFE9A1;" text="Panel usuario">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Button>
 
-                        <!-- OTROS -->
-      <Label layoutX="99.0" layoutY="270.0" text="Otros:">
-         <font>
-            <Font name="Segoe UI Emoji" size="14.0" />
-         </font>
-      </Label>
-      <Button fx:id="btnHistorial" layoutX="172.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleHistorial" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Historial">
+      <Button fx:id="btnSalir" layoutX="105.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleSalir" prefHeight="24.0" prefWidth="86.0" style="-fx-background-color: FFE9A1;" text="Salir">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="btnActualizar" layoutX="310.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleActualizar" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Actualizar">
+      <Button fx:id="btnRegresar" layoutX="233.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleRegresar" prefHeight="24.0" prefWidth="86.0" style="-fx-background-color: FFE9A1;" text="Regresar">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="btnMostrar" layoutX="172.0" layoutY="131.0" mnemonicParsing="false" onAction="#handleMostrar" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: FFE9A1;" text="Inventario">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnCrearUsuario" layoutX="308.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleCrearUsuario" style="-fx-background-color: FFE9A1;" text="Panel usuario">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="13.0" />
-         </font>
-      </Button>
-
-                        <!-- SALIR / REGRESAR -->
-      <Button fx:id="btnSalir" layoutX="122.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleSalir" prefHeight="24.0" prefWidth="86.0" style="-fx-background-color: FFE9A1;" text="Salir">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnRegresar" layoutX="299.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleRegresar" prefHeight="24.0" prefWidth="86.0" style="-fx-background-color: FFE9A1;" text="Regresar">
+      <Button fx:id="btnHistorial" layoutX="130.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleHistorial" prefHeight="24.0" prefWidth="162.0" style="-fx-background-color: FFE9A1;" text="Historial">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
