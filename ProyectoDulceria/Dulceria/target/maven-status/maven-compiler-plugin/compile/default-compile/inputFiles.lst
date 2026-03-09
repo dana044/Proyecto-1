@@ -1,28 +1,25 @@
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\App.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\AgregarVentanaController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\CrearUsuarioController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\EliminarVentanaController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginAdminController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginEmpleadoController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginVentanaController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\MenuAdminController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\MostrarActualizarController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\RegistrarVentanaController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\ReporteVentanaController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\VentanaActualizarController.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ArbolBBDulce.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ConexionBD.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Dulce.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\DulceDao.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Historial.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpDulceDAO.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpUsuarioDAO.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpVentaDAO.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\LineaVenta.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\NodoArbolDulce.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\OrdenamientosDulce.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Usuario.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\UsuarioDao.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Venta.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\VentaDAO.java
-C:\Users\citli\Downloads\Nueva Carpeta\Dulceria\src\main\java\module-info.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\App.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\CrearUsuarioController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginAdminController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginEmpleadoController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\LoginVentanaController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\MenuAdminController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\ProductoController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\RegistrarVentanaController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Controlador\VentaController.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ArbolBBDulce.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ConexionBD.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Dulce.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\DulceDao.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Historial.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpDulceDAO.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpUsuarioDAO.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\ImpVentaDAO.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\LineaVenta.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\NodoArbolDulce.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\OrdenamientosDulce.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Usuario.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\UsuarioDao.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\Venta.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\com\mycompany\dulceria\Modelo\VentaDAO.java
+C:\Users\citli\Documents\GitHub\Proyecto-1\ProyectoDulceria\Dulceria\src\main\java\module-info.java
